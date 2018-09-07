@@ -1,0 +1,19 @@
+
+header{
+    height: 10vh;    
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: gray;
+    position: relative;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    min-height: 90vh;
+    margin: 0 auto;
+    text-align: center;
+    background-color: darkgray;
+}

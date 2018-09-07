@@ -1,0 +1,176 @@
+/* h2{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+} */
+
+
+.container{
+    position: relative;
+}
+
+input{
+    width: 230px;
+    height: 30px;
+}
+
+button{
+    width: 120px;
+    height: 30px;
+}
+
+.form{
+    left: 50%;
+    /* //transform: translateX(-50%); */
+}
+
+.data{
+    width: 100%;
+    background-color: bisque;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,.2);
+}
+
+.data .tr .td, .data .tr .th{
+    padding: 5px 10px;
+}
+
+.tr{
+    width: 100%;
+    display: flex;
+    border:1px solid black;
+    border-top:0 !important;
+}
+
+.tr:first-child{
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+
+
+
+.th{
+    width: 22%;
+    font-weight: bold;
+    border: 1px solid black;
+    border-left:0;
+    border-bottom: 0 !important;
+    align-content: center;
+}
+
+.th:first-child{
+    border-left:1px solid black;    
+}
+
+.th:last-child, .th:nth-child(5)
+,.td:last-child, .td:nth-child(5){
+    width: 6% !important;
+}
+
+.td{
+    width: 22%;
+    line-height: 1.3;
+    margin: auto;
+    position: relative;
+}
+
+
+.td p, .td i{
+    margin: auto;
+    height: 100%;
+}
+
+
+/* .data tr:nth-child(2n+1){
+    background: #fff;
+} */
+
+.popup{
+    margin: 0 auto;
+    align-content: center;    
+}
+
+.popup_buttons{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.popup_buttons button{
+    padding: 5px 10px;
+    margin-top: 5px;
+    width:120px;
+    height: 40px;
+    background: transparent;
+    border:1px solid #457317;
+    color:#457317;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.popup_buttons button:disabled{
+    cursor: not-allowed;
+    transition: all 0.5s;
+}
+
+.popup_buttons button:hover{
+    background: #457317;
+    color:#fff;
+    transition: all 0.5s;
+}
+
+.popup span{
+    color: red;
+}
+
+.fa{
+    font-size: 23px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.fa-times{
+    color:#f00;
+}
+
+.fa-pencil{
+    color:#2E9881;
+}
+
+.fa-plus{
+    color: #457317;
+}
+
+.books_container{
+    width: 70%;
+    margin: 15px auto;
+    text-align: center;
+    position: relative;
+
+}
+
+.icon_plus{
+    width: 100%;
+    text-align: right;
+}
+
+.books_table{
+    width: 100%;
+}
+
+
+@media only screen and (max-width:1100px){
+    .data{
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .data .tr, .data .tr .td{
+        display: block;
+    }
+
+    .data .tr{
+        margin-bottom: 35px;
+    }
+}
